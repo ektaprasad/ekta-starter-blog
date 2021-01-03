@@ -12,7 +12,7 @@ import Image from "gatsby-image"
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profilepic.jpg/" }) {
         childImageSharp {
           fixed(width: 50, height: 50, quality: 95) {
             ...GatsbyImageSharpFixed
@@ -27,6 +27,7 @@ const Bio = () => {
           }
           social {
             twitter
+            instagram
           }
         }
       }
@@ -47,16 +48,19 @@ const Bio = () => {
           alt={author?.name || ``}
           className="bio-avatar"
           imgStyle={{
-            borderRadius: `50%`,
+            borderRadius: `50%`
           }}
         />
       )}
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          Hi, I am <strong>{author.name}</strong> .{author?.summary || null}
           {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
+          You should follow me on &nbsp;
+          <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a>
+          &nbsp; and for daily content on &nbsp;
+          <a href={`https://instagram.com/${social?.twitter || ``}`}>
+            Instagram
           </a>
         </p>
       )}
