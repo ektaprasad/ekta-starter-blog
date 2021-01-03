@@ -58,7 +58,7 @@ const Bio = () => {
           {` `}
           You should follow me on &nbsp;
           <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a>
-          &nbsp; and for daily content on &nbsp;
+          &nbsp; and &nbsp;
           <a href={`https://instagram.com/${social?.instagram || ``}`}>
             Instagram
           </a>
