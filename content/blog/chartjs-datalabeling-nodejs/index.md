@@ -1,5 +1,5 @@
 ---
-title: Displaying customized labels for each coordinates in chart.js.
+title: Displaying customized labels for each coordinates in node.js using chart.js.
 date: "2021-01-06T23:46:37.121Z"
 description: To display customize data labels for each coordinate in node.js using chart.js is a bit different or difficult. I did it by importing another third-party library that was definitely hard to implement initially, I had to read the documentation and went through many StackOverflow answers to find the solutions. So here I am documenting all of it together.
 ---
