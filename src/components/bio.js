@@ -65,9 +65,9 @@ const Bio = () => {
           <a href={`https://www.youtube.com/channel/UCK63o5Asoz3kzU4hNjNu9Iw`}>
             Youtube
           </a>
-          &nbsp; as well and &nbsp;
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a>
-          &nbsp;too, I casually post there.
+          &nbsp; as well. &nbsp;
+          {/* <a href={`https://twitter.com/${social?.twitter || ``}`}>Twitter</a>
+          &nbsp;too, I casually post there. */}
         </p>
       )}
     </div>
