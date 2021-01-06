@@ -4,7 +4,9 @@ date: "2021-01-06T23:46:37.121Z"
 description: To display customize data labels for each coordinate in node.js using chart.js is a bit different or difficult. I did it by importing another third-party library that was definitely hard to implement initially, I had to read the documentation and went through many StackOverflow answers to find the solutions. So here I am documenting all of it together.
 ---
 
-[!output graph](/content/blog/chartjs-datalabeling-nodejs/chart-output.png)
+![output graph](./chart-output1.png)
+
+> The above image is the output of the code for this article.If you are desiring the same, you can continue reading this page.
 
 > To display customize data labels for each coordinate in node.js using chart.js is a bit different or difficult. I did it by importing another third-party library that was definitely hard to implement initially, I had to read the documentation and went through many StackOverflow answers to find the solutions. So here I am documenting all of it together.
 
@@ -24,7 +26,7 @@ Now require it into your file :
 const ChartDataLabels = require('chartjs-plugin-datalabels');
 ```
 
-then you need to write
+Then you need to write
 
 ```
 const chartJsFactory = () => {
@@ -36,7 +38,7 @@ const chartJsFactory = () => {
     }
 ```
 
-next, you need to customize the callback
+Next, you need to customize the callback
 
 ```
 const chartCallback = (ChartJS) => {
@@ -66,7 +68,7 @@ configuration = {
 }
 ```
 
-Now you can customize the plugin as the way you want.I have written few customizable elements, you can checkout the documentation for more[here](https://chartjs-plugin-datalabels.netlify.app/guide/options.html#indexable-options)
+Now you can customize the plugin as the way you want.I have written few customizable elements, you can checkout the documentation for more [here](https://chartjs-plugin-datalabels.netlify.app/guide/options.html#indexable-options)
 
 ```
 plugins: {
@@ -165,7 +167,7 @@ const createImage = async () => {
             legend: {
                 labels: {
                     filter: function(item, chart) {
-                        return !item.text.includes('legend2');
+                        return !item.text.includes('legend2'); // hides a particular legend
                     },
                     fontSize: 18
                 }
