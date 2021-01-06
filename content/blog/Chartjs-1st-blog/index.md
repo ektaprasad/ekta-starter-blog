@@ -4,9 +4,7 @@ date: "2021-01-03T23:46:37.121Z"
 description: Working with chart.js on node.js can be hard at first, so here you go with a solution.
 ---
 
-![demo chart](https://mir-s3-cdn-cf.behance.net/project_modules/disp/82cc7320218015.562e7a26b12a9.jpg)
-
-> There is a very simple way to use chart.js on an HTML page, one just has to include the CDN URL in 'src' and draw on canvas in the script tag. But this script tag runs when you open the file in the browser, what if you want to run the code on the node.js server. For that, you can continue reading my post.
+There is a very simple way to use chart.js on an HTML page, one just has to include the CDN URL in 'src' and draw on canvas in the script tag. But this script tag runs when you open the file in the browser, what if you want to run the code on the node.js server. For that, you can continue reading my post.
 
 ## Installing packages
 
