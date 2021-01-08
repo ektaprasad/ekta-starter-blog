@@ -175,12 +175,14 @@ const createImage = async () => {
                   scales: {
                   xAxes:[
                       {
+                    type:'linear'
                       id:'xAxis1',
                         ticks: {
                             beginAtZero: false,
                             max: 1000,
                             stepSize:50,
                             fontSize: 18,
+
                         },
                         scaleLabel: {
                             display: true,
